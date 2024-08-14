@@ -27,6 +27,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 32px;
     height: 561px;
     color: var(--white);
@@ -61,6 +62,7 @@ body{
 }
 .nav{
     position: relative;
+    width: 100%;
     z-index: 5;
     padding: 0 20px;
     display: flex;
@@ -90,13 +92,15 @@ body{
     background-color: var(--green);
 }
 .hero{
-    z-index: 5;
     position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
     padding-top: 56px;
-    /* padding-bottom: 144px; */
+    width: 100%;
     text-align: center;
-    margin: 0 auto;
     background-image: url('./assets/images/image-hero.webp');
     background-repeat: no-repeat;
     background-size: 320px auto;
@@ -127,15 +131,20 @@ body{
     background-color: var(--green);
 }
 .btn{
-    padding: 12px 32px;
+    margin-bottom: 144px;
+    padding: 12px 30px;
     height: 53px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 180%;
+    line-height: 120%;
     color: var(--purple-900);
     background-color: var(--green);
-    border: none;
-    margin-bottom: 144px;
+    border: 2px solid var(--green);
+}
+.btn:hover, .btn:active, .btn:focus{
+    color: var(--green);
+    background-color: var(--purple-900);
+    border: 2px solid var(--green);
 }
 .hero__img{
     position: absolute;
@@ -212,22 +221,28 @@ body{
     line-height: 29px;
 }
 .resume{
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 344px 20px 0px 20px;
+    padding: 112px 20px 0px 20px;
     height: 737px;
 }
+.resume_container{
+    position: relative;
+    height: 625px;
+    text-align: center;
+}
 .resume__avatar{
-    position: absolute;
-    top: 112px;
+    /* position: absolute;
+    top: 112px; */
     width: 280px;
     height: 280px;
     border-radius: 50%;
 }
 .resume__content{
-    z-index: 5;
+    position: relative;
+    margin-top: -56px;
+    z-index: 6;
     padding: 32px;
     height: 393px;
     color: var(--white);
@@ -292,5 +307,107 @@ body{
     line-height: 100%;
 }
 
-
+@media (min-width: 768px) { 
+    .header{
+        height: 676px;
+        /* background-image: url('./assets/images/ornamental_tablet.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom 136px center; */
+    }
+    .header::before{
+        transform: translate(-50%, -142px);
+    }
+    .nav{
+        padding: 0 44px;
+    }
+    .hero{
+        background-size: 515px auto;
+    }
+    .hero__title, .hero__title-accent-text{
+        height: 121px;
+        font-size: 60px;
+    }
+    .hero__title{
+        width: 458px;
+    }
+    .hero__title-accent{
+        margin-right: 5px;
+    }
+    .hero__title-accent-line{
+        width: 151px;
+        height: 3px;
+        background-color: var(--green);
+    }
+    .btn{
+        height: 56px;
+        font-size: 18px;
+    }
+    /* .absolutest{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 484px;
+        background-color: crimson;
+    } */
+    .keyPoint{
+        position: relative;
+        padding: 56px 44px 44px 44px;
+        height: 596px;
+    }
+    .keyPoint__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-top: 32px;
+    }
+    .keyPoint__number{
+        flex-shrink: 0;
+        margin-bottom: 0;
+        margin-right: 56px;
+    }
+    .keyPoint__textContainer{
+        text-align: left;
+    }
+    .keyPoint__title{
+        margin-bottom: 28px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .keyPoint__content{
+        line-height: 29px;
+    }
+    .resume{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 112px 44px 0px 44px;
+        height: 670px;
+    }
+    .resume_container{
+        position: relative;
+        width: 100%;
+        /* max-height: 558px; */
+        text-align: left;
+    }
+    .resume__content{
+        position: absolute;
+        top: 224px;
+        right: 0;
+        margin-left: 176px; 
+        padding: 48px;
+        height: 390px;
+        text-align: left;
+    }
+    .resume__title{
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .resume__body{
+        margin: 32px 0px;
+        line-height: 29px;
+    }
+}
 

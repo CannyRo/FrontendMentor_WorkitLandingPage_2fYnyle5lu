@@ -142,6 +142,7 @@ body {
     color: var(--purple-900);
     background-color: var(--green);
     border: 2px solid var(--green);
+    transition: 0.7s;
 }
 
 .btn:hover,

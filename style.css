@@ -264,7 +264,7 @@ body {
     margin-top: -56px;
     z-index: 6;
     padding: 32px;
-    /* height: 393px; */
+    height: fit-content;
     color: var(--white);
     background-color: var(--purple-900);
     text-align: center;

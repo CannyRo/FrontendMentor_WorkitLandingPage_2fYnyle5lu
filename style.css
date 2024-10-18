@@ -135,7 +135,7 @@ body {
     display: inline-block;
 }
 .btn {
-    margin-bottom: 144px;
+    /* margin-bottom: 144px; */
     padding: 12px 30px;
     height: 53px;
     font-size: 16px;
@@ -264,7 +264,7 @@ body {
     margin-top: -56px;
     z-index: 6;
     padding: 32px;
-    height: 393px;
+    /* height: 393px; */
     color: var(--white);
     background-color: var(--purple-900);
     text-align: center;

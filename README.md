@@ -58,7 +58,7 @@ Not to spread myself too thin and try to find the right way of doing things more
 ### Useful resources
 
 - [How styling with variable font](https://fonts.google.com/knowledge/using_type/styling_type_on_the_web_with_variable_fonts) - This helped me for the Fraunces 144pt font.
-- [How to Make Curved Header using Html5 and CSS3](https://www.youtube.com/watch?v=mqzSY6Qy0yk) - This is an amazing short video which helped me finally understand how to styling with curves.
+- [How to Make Curved Header using Html5 and CSS3](https://www.example.com) - This is an amazing short video which helped me finally understand how to styling with curves.
 
 ## Author
 

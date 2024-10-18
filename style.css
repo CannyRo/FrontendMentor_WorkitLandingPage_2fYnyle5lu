@@ -131,7 +131,9 @@ body {
     height: 3px;
     background-color: var(--green);
 }
-
+.block{
+    display: inline-block;
+}
 .btn {
     margin-bottom: 144px;
     padding: 12px 30px;
